@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polpanorte - Frete</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="socialmedia">
+            <a href="https://www.youtube.com/"><img src="img/youtube.png" alt="Youtube"></a>
+            <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="https://github.com/"><img src="img/github.png" alt="GitHub"></a>
+        </div>
+    
+        <div class="logo">
+           <a href="index.html"><img src="img/logo.png" alt="Logo da empresa"></a> 
+        </div>
+
+        <nav class="links">
+            <a href="index.html"><b>Início</b></a>
+            <a href="frete.html"><b>Frete</b></a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="form">
+            <form id="freteForm" onsubmit="return false;">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" required maxlength="8">
+                <button type="button" onclick="buscarCep()">Buscar Endereço</button>
+
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" id="logradouro" name="logradouro" readonly>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" readonly>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" readonly>
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" readonly>
+
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" required>
+
+                <button type="submit" onclick="calcularFrete()">Calcular Frete</button>
+            </form>
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Sobre Nós</h3>
+                <p>A Polpanorte oferece as melhores polpas de fruta diretamente do norte para sua mesa.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="frete.html">Frete</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Polpanorte. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

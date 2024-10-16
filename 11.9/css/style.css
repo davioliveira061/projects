@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: 80px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1; 
+    color: rgb(35, 101, 158);
+}
+
+.socialmedia img {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    height: 125px;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.links a {
+    color: rgb(52, 146, 45);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 8px;
+    text-decoration: none;
+}
+
+header img {
+    height: 80px;
+}
+
+.nome {
+    justify-content: center;
+    text-align: center; /* Centraliza o texto */
+    color: #fff;
+    font-size: 3px;
+}
+
+.secao-1 img {
+    width: 100%; /* Ajusta a imagem para ocupar a largura completa */
+    height: auto; /* Mantém a proporção original da imagem */
+    max-height: 4000px; /* Limita a altura máxima da imagem, mas não a corta */
+}
+
+.produtos {
+    padding: 3rem 0;
+    background-color: #fff;
+}
+
+.produtos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+  
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-items: center; /* Centraliza os itens no grid */
+}
+
+.produto {
+    background-color: rgb(45, 26, 66);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.produto:hover {
+    transform: scale(1.05);
+}
+  
+.produto img {
+    width: 150px; /* Define uma largura fixa */
+    height: auto; /* Mantém a proporção original da imagem */
+    max-height: 150px; /* Limita a altura máxima da imagem, mas não a corta */
+    object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
+    border-radius: 9px;
+}
+  
+.produto h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255)
+}
+
+footer {
+    background-color: rgb(45, 26, 66);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info,
+.footer-links {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.footer-info h3,
+.footer-links h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h2{
+    text-align: center;
+}
+
+label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #34962d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #277a1f;
+}
